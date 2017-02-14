@@ -61,10 +61,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Anyconnect_VPN" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/02/14/hello-world/" class="article-date">
-  <time datetime="2017-02-14T06:08:09.695Z" itemprop="datePublished">2017-02-14</time>
+    <a href="/2017/02/14/Anyconnect_VPN/" class="article-date">
+  <time datetime="2017-02-14T01:07:14.000Z" itemprop="datePublished">2017-02-14</time>
 </a>
     
   </div>
@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/14/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/02/14/Anyconnect_VPN/">先进实验室 Anyconnect VPN设置</a>
     </h1>
   
 
@@ -83,20 +83,599 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="客户端安装"><a href="#客户端安装" class="headerlink" title="客户端安装"></a>客户端安装</h3><p>AnyConnect为思科推出的VPN客户端，目前已有Windows、Android、iOS、OS X、Ubuntu等操作系统的客户端，根据操作系统的需求，下载Anyconnect安装包，并安装客户端。</p>
+<table>
+<thead>
+<tr>
+<th>操作系统</th>
+<th>官方下载途径</th>
+<th>下载链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iOS</td>
+<td>Appstore</td>
+<td></td>
+</tr>
+<tr>
+<td>Mac OS X</td>
+<td>从官网下载要求授权</td>
+<td><a href="http://pan.baidu.com/s/1mixwrm4" target="_blank" rel="external">下载链接</a></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>GooglePlay或国内安卓商店</td>
+<td><a href="http://pan.baidu.com/s/1o8dAcm2" target="_blank" rel="external">下载链接</a></td>
+</tr>
+<tr>
+<td>Windows</td>
+<td>从官网下载要求授权</td>
+<td><a href="http://pan.baidu.com/s/1geIjFXL" target="_blank" rel="external">下载链接</a></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>用包管理器安装openconnect</td>
+<td><a href="http://pan.baidu.com/s/1kVm2Tk7" target="_blank" rel="external">下载链接</a></td>
+</tr>
+</tbody>
+</table>
+<p>如果需要下载其他平台客户端，请到这个<a href="http://pan.baidu.com/s/1c1Gnhrq" target="_blank" rel="external">链接</a>去下载对应的客户端。</p>
+<hr>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><ul>
+<li>启动Anyconnect</li>
+<li>服务器地址<span style="color:red"><strong>*</strong></span>: 服务器域名或者URL</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-1.jpg" alt=""></center><center style="color:purple"><strong>图1-1</strong></center>
+
+<ul>
+<li>继续连接，选择<strong>Connect Anyway</strong></li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-1.2.jpg" alt=""></center><center style="color:purple"><strong>图1-2</strong></center>
+
+<ul>
+<li>账号<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用账户</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-2.jpg" alt=""></center><center style="color:purple"><strong>图1-3</strong></center>
+
+<ul>
+<li>密码<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用密码</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-3.jpg" alt=""></center><center style="color:purple"><strong>图1-4</strong></center>
+
+<ul>
+<li>继续连接，选择<strong>Connect Anyway</strong></li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-4.1.jpg" alt=""></center><center style="color:purple"><strong>图1-5</strong></center>
+
+<ul>
+<li>连接VPN成功</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-5.jpg" alt=""></center><center style="color:purple"><strong>图1-6</strong></center>
+
+<ul>
+<li>VPN连接详情</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-6.jpg" alt=""></center><center style="color:purple"><strong>图1-7</strong></center>
+
+<ul>
+<li>如果出现<span style="color:red">Untrusted Server Blocked</span>，则修改设置，将<strong>Block connections to untrusted servers</strong>的勾选去掉。</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-7.jpg" alt=""></center><center style="color:purple"><strong>图1-8</strong></center><br><center><img src="image/Anyconnect/Windows/new/win-8.jpg" alt=""></center><center style="color:purple"><strong>图1-9</strong></center>
+
+<hr>
+<h3 id="MAC-OS-X"><a href="#MAC-OS-X" class="headerlink" title="MAC OS X"></a>MAC OS X</h3><ul>
+<li>启动Anyconnect</li>
+<li>服务器地址<span style="color:red"><strong>*</strong></span>: 服务器域名或者URL</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-1.jpg" alt=""></center><center style="color:purple"><strong>图2-1</strong></center>
+
+<ul>
+<li>继续连接，选择<strong>Connect Anyway</strong></li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-4.jpg" alt=""></center><center style="color:purple"><strong>图2-4</strong></center>
+
+<ul>
+<li>账号<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用账户</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-5.jpg" alt=""></center><center style="color:purple"><strong>图2-5</strong></center>
+
+<ul>
+<li>密码<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用密码</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-6.jpg" alt=""></center><center style="color:purple"><strong>图2-6</strong></center>
+
+<ul>
+<li>继续连接，选择<strong>Connect Anyway</strong></li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-7.jpg" alt=""></center><center style="color:purple"><strong>图2-7</strong></center>
+
+<ul>
+<li>Anyconnect连接成功</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-8.jpg" alt=""></center><center style="color:purple"><strong>图2-8</strong></center>
+
+<ul>
+<li>查看连接数据</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-9.jpg" alt=""></center><center style="color:purple"><strong>图2-9</strong></center>
+
+<ul>
+<li>如果出现<span style="color:red">Untrusted Server Blocked</span>，则修改设置，将<strong>Block connections to untrusted servers</strong>的勾选去掉。</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-2.jpg" alt=""></center><center style="color:purple"><strong>图2-2</strong></center>
+
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-3.jpg" alt=""></center><center style="color:purple"><strong>图2-3</strong></center>
+
+<hr>
+<h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h3><ul>
+<li>选择连接，添加VPN连接</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-1.jpg" alt=""></center><center style="color:purple"><strong>图3-1</strong></center>
+
+<center><img src="image/Anyconnect/iOS/new/iOS-2.jpg" alt=""></center><center style="color:purple"><strong>图3-2</strong></center>
+
+<ul>
+<li>说明：任意</li>
+<li>服务器地址<span style="color:red"><strong>*</strong></span>: 服务器域名或者URL</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-3.jpg" alt=""></center><center style="color:purple"><strong>图3-3</strong></center>
+
+<ul>
+<li>选择刚创建的VPN，并连接</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-4.jpg" alt=""></center><center style="color:purple"><strong>图3-4</strong></center>
+
+<center><img src="image/Anyconnect/iOS/new/iOS-5.jpg" alt=""></center><center style="color:purple"><strong>图3-5</strong></center>
+
+<ul>
+<li>账号<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用账户</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-6.jpg" alt=""></center><center style="color:purple"><strong>图3-6</strong></center>
+
+<ul>
+<li>密码<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用密码</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-7.jpg" alt=""></center><center style="color:purple"><strong>图3-7</strong></center>
+
+<ul>
+<li>Anyconnect连接成功，并可以查看详细信息</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-8.jpg" alt=""></center><center style="color:purple"><strong>图3-8</strong></center>
+
+<ul>
+<li>Anyconnect详细信息</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-9.jpg" alt=""></center><center style="color:purple"><strong>图3-9</strong></center>
+
+<ul>
+<li>如果出现<span style="color:red">不信任的服务器</span>警告，则修改设置，将<strong>阻止不信任的服务器</strong>的勾选去掉。</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-10.jpg" alt=""></center><center style="color:purple"><strong>图3-10</strong></center>
+
+<hr>
+<h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><ul>
+<li>选择连接，添加VPN连接</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-1.jpg" alt=""></center><center style="color:purple"><strong>图4-1</strong></center>
+
+<center><img src="image/Anyconnect/Android/new/Android-2.jpg" alt=""></center><center style="color:purple"><strong>图4-2</strong></center>
+
+<ul>
+<li>说明：任意</li>
+<li>服务器地址<span style="color:red"><strong>*</strong></span>: 服务器域名或者URL</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-3.jpg" alt=""></center><center style="color:purple"><strong>图4-3</strong></center>
+
+<ul>
+<li>选择刚创建的VPN，并连接</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-4.jpg" alt=""></center><center style="color:purple"><strong>图4-4</strong></center>
+
+<center><img src="image/Anyconnect/Android/new/Android-5.jpg" alt=""></center><center style="color:purple"><strong>图4-5</strong></center>
+
+<ul>
+<li>证书不可靠警告，选择<strong>继续</strong>进行连接</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-6.jpg" alt=""></center><center style="color:purple"><strong>图4-6</strong></center>
+
+<ul>
+<li>账号<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用账户</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-7.jpg" alt=""></center><center style="color:purple"><strong>图4-7</strong></center>
+
+<ul>
+<li>密码<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用密码</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-8.jpg" alt=""></center><center style="color:purple"><strong>图4-8</strong></center>
+
+<ul>
+<li>选择<strong>我信任此应用</strong></li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-9.jpg" alt=""></center><center style="color:purple"><strong>图4-9</strong></center>
+
+<ul>
+<li>连接VPN成功</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-10.jpg" alt=""></center><center style="color:purple"><strong>图4-10</strong></center>
+
+<ul>
+<li>如果出现<span style="color:red">不信任的服务器</span>警告，则修改设置，将<strong>阻止不信任的服务器</strong>的勾选去掉。</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-11.jpg" alt=""></center><center style="color:purple"><strong>图4-11</strong></center>
+
+<center><img src="image/Anyconnect/Android/new/Android-12.jpg" alt=""></center><center style="color:purple"><strong>图4-12</strong></center>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/14/Anyconnect_VPN/" data-id="ciz5ap4c900006grb173dz897" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-IKEv2_VPN" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/14/IKEv2_VPN/" class="article-date">
+  <time datetime="2017-02-14T01:07:14.000Z" itemprop="datePublished">2017-02-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/14/IKEv2_VPN/">先进实验室 IKEv2 VPN设置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><h4 id="系统版本要求"><a href="#系统版本要求" class="headerlink" title="系统版本要求"></a>系统版本要求</h4><p><span style="color:red">Win 7</span>或者更高版本</p>
+<h4 id="证书导入"><a href="#证书导入" class="headerlink" title="证书导入"></a>证书导入</h4><p>Windows使用IKEv2 VPN需要导入服务器CA证书到<span style="color:red"><strong>信任根证书颁发机构</strong></span>，以Win10为例，Win7、Win8过程类似</p>
+<ul>
+<li>下载CA证书到本机，下载地址为:  <a href="http://pan.baidu.com/s/1kUQw5KF" target="_blank" rel="external">http://pan.baidu.com/s/1kUQw5KF</a></li>
+<li>开始菜单搜索<strong>mmc（Microsoft 管理控制台）</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/cert/cert-1.jpg" alt=""></center><center style="color:purple"><strong>图1-1</strong></center>
+
+<ul>
+<li><strong>文件</strong>-<strong>添加/删除管理单元</strong>，添加<strong>证书</strong>单元</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/cert/cert-2.jpg" alt=""></center><center style="color:purple"><strong>图1-2</strong></center>
+
+<center><img src="image/ikev2-user/Windows/cert/cert-3.jpg" alt=""></center><center style="color:purple"><strong>图1-3</strong></center>
+
+<ul>
+<li>证书单元的弹出窗口中选<strong>计算机账户</strong>，然后选择<strong>下一步</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/cert/cert-4.jpg" alt=""></center><center style="color:purple"><strong>图1-4</strong></center>
+
+<ul>
+<li>选择<strong>本地计算机/运行此控制台的计算机</strong>，然后选择<strong>确定</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/cert/cert-5.jpg" alt=""></center><center style="color:purple"><strong>图1-5</strong></center>
+
+<ul>
+<li>在左边的<strong>控制台根节点</strong>下选择<strong>证书</strong> -&gt; <strong>受信任的根证书颁发机构</strong> -&gt; <strong>证书</strong></li>
+<li>右键点击<strong>证书</strong> -&gt; <strong>所有任务</strong> -&gt; <strong>导入</strong>，打开证书导入窗口。</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/cert/cert-6.jpg" alt=""></center><center style="color:purple"><strong>图1-6</strong></center>
+
+<center><img src="image/ikev2-user/Windows/cert/cert-7.jpg" alt="![img](image/ikev2-user/Windows/cert/cert-7.jpg)"></center><center style="color:purple"><strong>图1-7</strong></center>
+
+<ul>
+<li>选择证书文件导入即可</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/cert/cert-8.jpg" alt=""></center><center style="color:purple"><strong>图1-8</strong></center>
+
+
+
+<center><img src="image/ikev2-user/Windows/cert/cert-9.jpg" alt=""></center><center style="color:purple"><strong>图1-9</strong></center>
+
+<h4 id="VPN设置"><a href="#VPN设置" class="headerlink" title="VPN设置"></a>VPN设置</h4><h5 id="Win10-Win8"><a href="#Win10-Win8" class="headerlink" title="Win10/Win8"></a>Win10/Win8</h5><ul>
+<li>配置路径: <strong>设置 -&gt; 网络和Internet -&gt; VPN -&gt; 添加VPN</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-1.jpg" alt=""></center><center style="color:purple"><strong>图1-10</strong></center>
+
+<center><img src="image/ikev2-user/Windows/win10/win10-2.jpg" alt=""></center><center style="color:purple"><strong>图1-11</strong></center>
+
+<center><img src="image/ikev2-user/Windows/win10/win10-3.jpg" alt=""></center><center style="color:purple"><strong>图1-12</strong></center>
+
+<ul>
+<li>VPN提供商: Windows（内置）</li>
+<li>连接名称: 任意</li>
+<li>服务器名称或地址<span style="color:red"><strong>*</strong></span>: VPN服务器URL或者IP地址</li>
+<li>VPN类型: IKEv2</li>
+<li>登录信息类型: 用户名和密码</li>
+<li>用户名<span style="color:red"><strong>*</strong></span>: 登录VPN用户名</li>
+<li>密码<span style="color:red"><strong>*</strong></span>: 登录VPN密码</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-4.jpg" alt=""></center><center style="color:purple"><strong>图1-13</strong></center>
+
+
+<p>保存上述配置后，进行如下设置</p>
+<ul>
+<li>配置路径: <strong>控制面板 -&gt; 网络和 Internet -&gt; 网络和共享中心 -&gt; 更改适配器设置</strong>，</li>
+<li>在新建的 VPN 连接上右键<strong>属性</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-9.jpg" alt=""></center><center style="color:purple"><strong>图1-14</strong></center>
+
+<ul>
+<li>切换到<strong>安全</strong>选项卡，参数调整为如下，然后<strong>确定</strong>进行保存<ul>
+<li>VPN 类型: IKEv2</li>
+<li>数据加密选: 需要加密</li>
+<li>身份验证：EAP-MSCHAP v2</li>
+</ul>
+</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-10.jpg" alt=""></center><center style="color:purple"><strong>图1-15</strong></center>
+
+<ul>
+<li>切换到<strong>网络</strong>选项卡，双击<strong>Internet协议版本 4 (TCP/IPv4)</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-11.jpg" alt=""></center><center style="color:purple"><strong>图1-16</strong></center>
+
+<ul>
+<li>选择<strong>高级</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-12.jpg" alt=""></center><center style="color:purple"><strong>图1-17</strong></center>
+
+<ul>
+<li>确认<span style="color:red"><strong>不</strong></span>勾选<strong>在远程网络上使用默认网关</strong>，然后选择<strong>确定</strong>。</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-13+.jpg" alt=""></center><center style="color:purple"><strong>图1-18</strong></center>
+
+<ul>
+<li>切换到路径<strong>设置 -&gt; 网络和Internet -&gt; VPN</strong> ，连接VPN</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-5.jpg" alt=""></center><center style="color:purple"><strong>图1-19</strong></center>
+
+<ul>
+<li>继续连接，信任证书</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-6.jpg" alt=""></center><center style="color:purple"><strong>图1-20</strong></center>
+
+<ul>
+<li>连接VPN成功</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-7.jpg" alt=""></center><center style="color:purple"><strong>图1-21</strong></center>
+
+<ul>
+<li>可以通过路径<strong>控制面板 -&gt; 网络和 Internet -&gt; 网络和共享中心 -&gt; 更改适配器设置</strong>，查看VPN虚拟网卡信息</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win10/win10-8.jpg" alt=""></center><center style="color:purple"><strong>图1-22</strong></center>
+
+<h5 id="Win7"><a href="#Win7" class="headerlink" title="Win7"></a>Win7</h5><ul>
+<li>配置路径: <strong>控制面板 -&gt; 网络和 Internet -&gt; 网络和共享中心 -&gt; 连接新的网络或连接 -&gt; 连接到工作区 -&gt; 创建新连接 -&gt; 使用我的Internet连接(VPN)</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-1.jpg" alt=""></center><center style="color:purple"><strong>图1-23</strong></center>
+
+<center><img src="image/ikev2-user/Windows/win7/win7-2.jpg" alt=""></center><center style="color:purple"><strong>图1-24</strong></center>
+
+<center><img src="image/ikev2-user/Windows/win7/win7-3.jpg" alt=""></center><center style="color:purple"><strong>图1-25</strong></center>
+
+<ul>
+<li>Internet 地址<span style="color:red"><strong>*</strong></span>: VPN服务器URL或者IP地址</li>
+<li>目标名称: 任意</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-4.jpg" alt=""></center><center style="color:purple"><strong>图1-26</strong></center>
+
+<ul>
+<li>用户名<span style="color:red"><strong>*</strong></span>: 登录VPN用户名</li>
+<li>密码<span style="color:red"><strong>*</strong></span>: 登录VPN密码</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-5.jpg" alt=""></center><center style="color:purple"><strong>图1-27</strong></center>
+
+<ul>
+<li><p>设置完毕后，先不连接</p>
+<center><img src="image/ikev2-user/Windows/win7/win7-6.jpg" alt=""></center><center style="color:purple"><strong>图1-28</strong></center>
+</li>
+<li><p>进入配置路径: <strong>控制面板 -&gt; 网络和 Internet -&gt; 网络和共享中心 -&gt; 更改适配器设置</strong></p>
+</li>
+<li>在新建的 VPN 连接上右键<strong>属性</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-7.jpg" alt=""></center><center style="color:purple"><strong>图1-29</strong></center>
+
+<ul>
+<li>切换到<strong>安全</strong>选项卡，参数调整为如下，然后<strong>确定</strong>进行保存<ul>
+<li>VPN 类型: IKEv2</li>
+<li>数据加密选: 需要加密</li>
+<li>身份验证：EAP-MSCHAP v2</li>
+</ul>
+</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-8.jpg" alt=""></center><center style="color:purple"><strong>图1-30</strong></center>
+
+<ul>
+<li>切换到<strong>网络</strong>选项卡，双击<strong>Internet协议版本 4 (TCP/IPv4)</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-11.jpg" alt=""></center><center style="color:purple"><strong>图1-31</strong></center>
+
+<ul>
+<li>选择<strong>高级</strong></li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-12.jpg" alt=""></center><center style="color:purple"><strong>图1-32</strong></center>
+
+<ul>
+<li>确认<span style="color:red"><strong>不</strong></span>勾选<strong>在远程网络上使用默认网关</strong>，然后选择<strong>确定</strong>进行保存。</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-13+.jpg" alt=""></center><center style="color:purple"><strong>图1-33</strong></center>
+
+<ul>
+<li>进入路径<strong>控制面板 -&gt; 网络和 Internet -&gt; 网络和共享中心 -&gt; 更改适配器设置</strong>，双击VPN适配器，连接VPN</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-9.jpg" alt=""></center><center style="color:purple"><strong>图1-34</strong></center>
+
+<ul>
+<li>连接VPN成功</li>
+</ul>
+<center><img src="image/ikev2-user/Windows/win7/win7-10.jpg" alt=""></center><center style="color:purple"><strong>图1-35</strong></center>
+
+<hr>
+<h3 id="MAC-OS-X"><a href="#MAC-OS-X" class="headerlink" title="MAC OS X"></a>MAC OS X</h3><h4 id="系统版本要求-1"><a href="#系统版本要求-1" class="headerlink" title="系统版本要求"></a>系统版本要求</h4><p><span style="color:red">OS X 10.11 (“El Capitan”)</span>或者更高版本</p>
+<h4 id="证书导入-1"><a href="#证书导入-1" class="headerlink" title="证书导入"></a>证书导入</h4><ul>
+<li>下载CA证书到本地，下载地址为:  <a href="http://pan.baidu.com/s/1kUQw5KF" target="_blank" rel="external">http://pan.baidu.com/s/1kUQw5KF</a></li>
+<li>配置路径: <strong>钥匙串访问 -&gt; 钥匙串 -&gt; 系统</strong></li>
+</ul>
+<center><img src="image/ikev2-user/MacOSX/cert/cert-1.jpg" alt=""></center><center style="color:purple"><strong>图2-1</strong></center>
+
+<center><img src="image/ikev2-user/MacOSX/cert/cert-2.jpg" alt=""></center><center style="color:purple"><strong>图2-2</strong></center>
+
+<ul>
+<li>选择要添加的证书文件</li>
+</ul>
+<center><img src="image/ikev2-user/MacOSX/cert/cert-3.jpg" alt=""></center><center style="color:purple"><strong>图2-3</strong></center>
+
+<ul>
+<li>导入证书</li>
+</ul>
+<center><img src="image/ikev2-user/MacOSX/cert/cert-4.jpg" alt=""></center><center style="color:purple"><strong>图2-4</strong></center>
+
+<center><img src="image/ikev2-user/MacOSX/cert/cert-5.jpg" alt=""></center><center style="color:purple"><strong>图2-5</strong></center>
+
+<h4 id="VPN设置-1"><a href="#VPN设置-1" class="headerlink" title="VPN设置"></a>VPN设置</h4><ul>
+<li>配置路径: <strong>设置 -&gt; 网络 -&gt;添加网络连接</strong></li>
+</ul>
+<center><img src="image/ikev2-user/MacOSX/config/macosx-1.jpg" alt=""></center><center style="color:purple"><strong>图2-6</strong></center>
+
+<ul>
+<li>接口: VPN</li>
+<li>VPN类型: IKEv2</li>
+<li>服务名称: 任意</li>
+</ul>
+<center><img src="image/ikev2-user/MacOSX/config/macosx-2.jpg" alt=""></center><center style="color:purple"><strong>图2-7</strong></center>
+
+<ul>
+<li>服务器<span style="color:red"><strong>*</strong></span>: VPN服务器URL或者IP地址</li>
+<li>远程ID<span style="color:red"><strong>*</strong></span>: VPN服务器URL或者IP地址</li>
+<li>本地ID: 留空</li>
+<li>鉴定设置 -&gt; 用户名<span style="color:red"><strong>*</strong></span>: 登录VPN用户名</li>
+<li>鉴定设置 -&gt; 密码<span style="color:red"><strong>*</strong></span>: 登录VPN密码</li>
+</ul>
+<center><img src="image/ikev2-user/MacOSX/config/macosx-3.jpg" alt=""></center><center style="color:purple"><strong>图2-8</strong></center>
+
+<ul>
+<li>选择连接VPN</li>
+</ul>
+<center><img src="image/ikev2-user/MacOSX/config/macosx-4.png" alt=""></center><center style="color:purple"><strong>图2-9</strong></center>
+
+<ul>
+<li>连接VPN成功</li>
+</ul>
+<center><img src="image/ikev2-user/MacOSX/config/macosx-5.jpg" alt=""></center><center style="color:purple"><strong>图2-10</strong></center>
+
+<hr>
+<h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h3><h4 id="系统版本要求-2"><a href="#系统版本要求-2" class="headerlink" title="系统版本要求"></a>系统版本要求</h4><p><span style="color:red">iOS 9</span>或者更高版本</p>
+<h4 id="证书导入-2"><a href="#证书导入-2" class="headerlink" title="证书导入"></a>证书导入</h4><ul>
+<li>安装CA证书，Safari浏览器中输入 <a href="http://pan.baidu.com/s/1kUQw5KF" target="_blank" rel="external">http://pan.baidu.com/s/1kUQw5KF</a></li>
+<li>直接证书文件打开，如图3-1所示</li>
+</ul>
+<center><img src="image/ikev2-user/iOS/cert/cert-0.jpg" alt=""></center><center style="color:purple"><strong>图3-1</strong></center>
+
+<ul>
+<li>跳转到设置页面，选择<strong>安装</strong></li>
+</ul>
+<center><img src="image/ikev2-user/iOS/cert/cert-2.jpg" alt=""></center><center style="color:purple"><strong>图3-2</strong></center>
+
+<ul>
+<li>输入iOS密码</li>
+</ul>
+<center><img src="image/ikev2-user/iOS/cert/cert-3.jpg" alt=""></center><center style="color:purple"><strong>图3-3</strong></center>
+
+<ul>
+<li>点击安装，导入证书</li>
+</ul>
+<center><img src="image/ikev2-user/iOS/cert/cert-4.jpg" alt=""></center><center style="color:purple"><strong>图3-4</strong></center>
+
+<h4 id="VPN设置-2"><a href="#VPN设置-2" class="headerlink" title="VPN设置"></a>VPN设置</h4><ul>
+<li>配置路径: <strong>设置 -&gt; VPN -&gt; 添加配置</strong></li>
+</ul>
+<center><img src="image/ikev2-user/iOS/config/iOS-1.jpg" alt=""></center><center style="color:purple"><strong>图3-5</strong></center>
+
+<ul>
+<li>类型: IKEv2</li>
+<li>描述: 任意</li>
+<li>用户鉴定: 用户名</li>
+<li>服务器<span style="color:red"><strong>*</strong></span>: VPN服务器URL或者IP地址</li>
+<li>用户名<span style="color:red"><strong>*</strong></span>: 登录VPN用户名</li>
+<li>密码<span style="color:red"><strong>*</strong></span>: 登录VPN密码</li>
+<li>远程ID<span style="color:red"><strong>*</strong></span>: VPN服务器URL或者IP地址</li>
+<li>本地ID: 留空</li>
+</ul>
+<center><img src="image/ikev2-user/iOS/config/iOS-2.jpg" alt=""></center><center style="color:purple"><strong>图3-6</strong></center>
+
+<ul>
+<li>设置完毕后，连接VPN</li>
+</ul>
+<center><img src="image/ikev2-user/iOS/config/iOS-3.jpg" alt=""></center><center style="color:purple"><strong>图3-7</strong></center>
+
+<hr>
+<h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><h4 id="系统版本要求-3"><a href="#系统版本要求-3" class="headerlink" title="系统版本要求"></a>系统版本要求</h4><p><span style="color:red">Android 4</span>或者更高版本，需要安装<a href="http://pan.baidu.com/s/1gfkEXKB" target="_blank" rel="external">Strongswan客户端</a>，下载地址为：<a href="http://pan.baidu.com/s/1gfkEXKB" target="_blank" rel="external">http://pan.baidu.com/s/1gfkEXKB</a></p>
+<h4 id="证书导入-3"><a href="#证书导入-3" class="headerlink" title="证书导入"></a>证书导入</h4><ul>
+<li>下载CA证书到本机，下载地址为: <a href="http://pan.baidu.com/s/1kUQw5KF" target="_blank" rel="external">http://pan.baidu.com/s/1kUQw5KF</a></li>
+<li>Strongswan客户端中导入服务器证书</li>
+<li>配置路径: <strong>CA certificates -&gt; Import certificates</strong></li>
+</ul>
+<center><img src="image/ikev2-user/android/cert/cert-1.jpg" alt=""></center><center style="color:purple"><strong>图4-1</strong></center>
+
+<center><img src="image/ikev2-user/android/cert/cert-2.jpg" alt=""></center><center style="color:purple"><strong>图4-2</strong></center>
+
+<ul>
+<li>选择证书文件</li>
+</ul>
+<center><img src="image/ikev2-user/android/cert/cert-3.jpg" alt=""></center><center style="color:purple"><strong>图4-3</strong></center>
+
+<ul>
+<li>确认导入证书</li>
+</ul>
+<center><img src="image/ikev2-user/android/cert/cert-4.jpg" alt=""></center><center style="color:purple"><strong>图4-4</strong></center>
+
+<ul>
+<li>可以查看导入的CA证书</li>
+</ul>
+<center><img src="image/ikev2-user/android/cert/cert-5.jpg" alt=""></center><center style="color:purple"><strong>图4-5</strong></center>
+
+<h4 id="VPN设置-3"><a href="#VPN设置-3" class="headerlink" title="VPN设置"></a>VPN设置</h4><ul>
+<li>配置路径：<strong>ADD VPN PROFILE</strong></li>
+</ul>
+<center><img src="image/ikev2-user/android/config/android-1.jpg" alt=""></center><center style="color:purple"><strong>图4-6</strong></center>
+
+
+<ul>
+<li>服务器<span style="color:red"><strong>*</strong></span>: VPN服务器URL或者IP地址</li>
+<li>VPN类型: IKEv2 EAP</li>
+<li>用户名<span style="color:red"><strong>*</strong></span>: 登录VPN用户名</li>
+<li>密码<span style="color:red"><strong>*</strong></span>: 登录VPN密码</li>
+</ul>
+<center><img src="image/ikev2-user/android/config/android-2.jpg" alt=""></center><center style="color:purple"><strong>图4-7</strong></center>
+
+<ul>
+<li>添加完毕后，点击配置完毕的VPN</li>
+</ul>
+<center><img src="image/ikev2-user/android/config/android-3.jpg" alt=""></center><center style="color:purple"><strong>图4-8</strong></center>
+
+<ul>
+<li>连接VPN成功</li>
+</ul>
+<center><img src="image/ikev2-user/android/config/android-4.jpg" alt=""></center><center style="color:purple"><strong>图4-9</strong></center>
+
+<hr>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><p>Linux 的版本众多，认证方法与协议支持也非常丰富，详细方法请根据 Linux 版本查询连接方法。一般而言，Linux 通过 NetworkManager-strongswan连接。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/14/hello-world/" data-id="ciz58drke00005srbv8kqlpjh" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/02/14/IKEv2_VPN/" data-id="ciz5ap4fy00016grbmqbj1lxh" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -136,7 +715,11 @@
       <ul>
         
           <li>
-            <a href="/2017/02/14/hello-world/">Hello World</a>
+            <a href="/2017/02/14/Anyconnect_VPN/">先进实验室 Anyconnect VPN设置</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/14/IKEv2_VPN/">先进实验室 IKEv2 VPN设置</a>
           </li>
         
       </ul>

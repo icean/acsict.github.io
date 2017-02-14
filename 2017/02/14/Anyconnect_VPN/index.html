@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>先进实验室 Anyconnect VPN设置 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="客户端安装AnyConnect为思科推出的VPN客户端，目前已有Windows、Android、iOS、OS X、Ubuntu等操作系统的客户端，根据操作系统的需求，下载Anyconnect安装包，并安装客户端。
+
+
+
+操作系统
+官方下载途径
+下载链接
+
+
+
+
+iOS
+Appstore
+
+
+
+Mac OS X
+从官网下载要求授权
+下载链接
+
+
+Android
+GooglePlay或国内安卓商店
+下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="先进实验室 Anyconnect VPN设置">
+<meta property="og:url" content="http://yoursite.com/2017/02/14/Anyconnect_VPN/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="客户端安装AnyConnect为思科推出的VPN客户端，目前已有Windows、Android、iOS、OS X、Ubuntu等操作系统的客户端，根据操作系统的需求，下载Anyconnect安装包，并安装客户端。
+
+
+
+操作系统
+官方下载途径
+下载链接
+
+
+
+
+iOS
+Appstore
+
+
+
+Mac OS X
+从官网下载要求授权
+下载链接
+
+
+Android
+GooglePlay或国内安卓商店
+下">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-1.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-1.2.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-2.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-3.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-4.1.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-5.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-6.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-7.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-8.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-1.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-4.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-5.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-6.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-7.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-8.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-9.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-2.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/MACOSX/new/Macosx-3.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-1.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-2.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-3.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-4.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-5.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-6.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-7.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-8.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-9.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/iOS/new/iOS-10.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-1.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-2.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-3.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-4.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-5.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-6.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-7.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-8.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-9.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-10.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-11.jpg">
+<meta property="og:image" content="http://yoursite.com/image/Anyconnect/Android/new/Android-12.jpg">
+<meta property="og:updated_time" content="2017-02-14T08:56:50.696Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="先进实验室 Anyconnect VPN设置">
+<meta name="twitter:description" content="客户端安装AnyConnect为思科推出的VPN客户端，目前已有Windows、Android、iOS、OS X、Ubuntu等操作系统的客户端，根据操作系统的需求，下载Anyconnect安装包，并安装客户端。
+
+
+
+操作系统
+官方下载途径
+下载链接
+
+
+
+
+iOS
+Appstore
+
+
+
+Mac OS X
+从官网下载要求授权
+下载链接
+
+
+Android
+GooglePlay或国内安卓商店
+下">
+<meta name="twitter:image" content="http://yoursite.com/image/Anyconnect/Windows/new/win-1.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Anyconnect_VPN" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/14/Anyconnect_VPN/" class="article-date">
+  <time datetime="2017-02-14T01:07:14.000Z" itemprop="datePublished">2017-02-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      先进实验室 Anyconnect VPN设置
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="客户端安装"><a href="#客户端安装" class="headerlink" title="客户端安装"></a>客户端安装</h3><p>AnyConnect为思科推出的VPN客户端，目前已有Windows、Android、iOS、OS X、Ubuntu等操作系统的客户端，根据操作系统的需求，下载Anyconnect安装包，并安装客户端。</p>
+<table>
+<thead>
+<tr>
+<th>操作系统</th>
+<th>官方下载途径</th>
+<th>下载链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iOS</td>
+<td>Appstore</td>
+<td></td>
+</tr>
+<tr>
+<td>Mac OS X</td>
+<td>从官网下载要求授权</td>
+<td><a href="http://pan.baidu.com/s/1mixwrm4" target="_blank" rel="external">下载链接</a></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>GooglePlay或国内安卓商店</td>
+<td><a href="http://pan.baidu.com/s/1o8dAcm2" target="_blank" rel="external">下载链接</a></td>
+</tr>
+<tr>
+<td>Windows</td>
+<td>从官网下载要求授权</td>
+<td><a href="http://pan.baidu.com/s/1geIjFXL" target="_blank" rel="external">下载链接</a></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>用包管理器安装openconnect</td>
+<td><a href="http://pan.baidu.com/s/1kVm2Tk7" target="_blank" rel="external">下载链接</a></td>
+</tr>
+</tbody>
+</table>
+<p>如果需要下载其他平台客户端，请到这个<a href="http://pan.baidu.com/s/1c1Gnhrq" target="_blank" rel="external">链接</a>去下载对应的客户端。</p>
+<hr>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><ul>
+<li>启动Anyconnect</li>
+<li>服务器地址<span style="color:red"><strong>*</strong></span>: 服务器域名或者URL</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-1.jpg" alt=""></center><center style="color:purple"><strong>图1-1</strong></center>
+
+<ul>
+<li>继续连接，选择<strong>Connect Anyway</strong></li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-1.2.jpg" alt=""></center><center style="color:purple"><strong>图1-2</strong></center>
+
+<ul>
+<li>账号<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用账户</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-2.jpg" alt=""></center><center style="color:purple"><strong>图1-3</strong></center>
+
+<ul>
+<li>密码<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用密码</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-3.jpg" alt=""></center><center style="color:purple"><strong>图1-4</strong></center>
+
+<ul>
+<li>继续连接，选择<strong>Connect Anyway</strong></li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-4.1.jpg" alt=""></center><center style="color:purple"><strong>图1-5</strong></center>
+
+<ul>
+<li>连接VPN成功</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-5.jpg" alt=""></center><center style="color:purple"><strong>图1-6</strong></center>
+
+<ul>
+<li>VPN连接详情</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-6.jpg" alt=""></center><center style="color:purple"><strong>图1-7</strong></center>
+
+<ul>
+<li>如果出现<span style="color:red">Untrusted Server Blocked</span>，则修改设置，将<strong>Block connections to untrusted servers</strong>的勾选去掉。</li>
+</ul>
+<center><img src="image/Anyconnect/Windows/new/win-7.jpg" alt=""></center><center style="color:purple"><strong>图1-8</strong></center><br><center><img src="image/Anyconnect/Windows/new/win-8.jpg" alt=""></center><center style="color:purple"><strong>图1-9</strong></center>
+
+<hr>
+<h3 id="MAC-OS-X"><a href="#MAC-OS-X" class="headerlink" title="MAC OS X"></a>MAC OS X</h3><ul>
+<li>启动Anyconnect</li>
+<li>服务器地址<span style="color:red"><strong>*</strong></span>: 服务器域名或者URL</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-1.jpg" alt=""></center><center style="color:purple"><strong>图2-1</strong></center>
+
+<ul>
+<li>继续连接，选择<strong>Connect Anyway</strong></li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-4.jpg" alt=""></center><center style="color:purple"><strong>图2-4</strong></center>
+
+<ul>
+<li>账号<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用账户</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-5.jpg" alt=""></center><center style="color:purple"><strong>图2-5</strong></center>
+
+<ul>
+<li>密码<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用密码</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-6.jpg" alt=""></center><center style="color:purple"><strong>图2-6</strong></center>
+
+<ul>
+<li>继续连接，选择<strong>Connect Anyway</strong></li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-7.jpg" alt=""></center><center style="color:purple"><strong>图2-7</strong></center>
+
+<ul>
+<li>Anyconnect连接成功</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-8.jpg" alt=""></center><center style="color:purple"><strong>图2-8</strong></center>
+
+<ul>
+<li>查看连接数据</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-9.jpg" alt=""></center><center style="color:purple"><strong>图2-9</strong></center>
+
+<ul>
+<li>如果出现<span style="color:red">Untrusted Server Blocked</span>，则修改设置，将<strong>Block connections to untrusted servers</strong>的勾选去掉。</li>
+</ul>
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-2.jpg" alt=""></center><center style="color:purple"><strong>图2-2</strong></center>
+
+<center><img src="image/Anyconnect/MACOSX/new/Macosx-3.jpg" alt=""></center><center style="color:purple"><strong>图2-3</strong></center>
+
+<hr>
+<h3 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h3><ul>
+<li>选择连接，添加VPN连接</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-1.jpg" alt=""></center><center style="color:purple"><strong>图3-1</strong></center>
+
+<center><img src="image/Anyconnect/iOS/new/iOS-2.jpg" alt=""></center><center style="color:purple"><strong>图3-2</strong></center>
+
+<ul>
+<li>说明：任意</li>
+<li>服务器地址<span style="color:red"><strong>*</strong></span>: 服务器域名或者URL</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-3.jpg" alt=""></center><center style="color:purple"><strong>图3-3</strong></center>
+
+<ul>
+<li>选择刚创建的VPN，并连接</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-4.jpg" alt=""></center><center style="color:purple"><strong>图3-4</strong></center>
+
+<center><img src="image/Anyconnect/iOS/new/iOS-5.jpg" alt=""></center><center style="color:purple"><strong>图3-5</strong></center>
+
+<ul>
+<li>账号<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用账户</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-6.jpg" alt=""></center><center style="color:purple"><strong>图3-6</strong></center>
+
+<ul>
+<li>密码<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用密码</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-7.jpg" alt=""></center><center style="color:purple"><strong>图3-7</strong></center>
+
+<ul>
+<li>Anyconnect连接成功，并可以查看详细信息</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-8.jpg" alt=""></center><center style="color:purple"><strong>图3-8</strong></center>
+
+<ul>
+<li>Anyconnect详细信息</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-9.jpg" alt=""></center><center style="color:purple"><strong>图3-9</strong></center>
+
+<ul>
+<li>如果出现<span style="color:red">不信任的服务器</span>警告，则修改设置，将<strong>阻止不信任的服务器</strong>的勾选去掉。</li>
+</ul>
+<center><img src="image/Anyconnect/iOS/new/iOS-10.jpg" alt=""></center><center style="color:purple"><strong>图3-10</strong></center>
+
+<hr>
+<h3 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h3><ul>
+<li>选择连接，添加VPN连接</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-1.jpg" alt=""></center><center style="color:purple"><strong>图4-1</strong></center>
+
+<center><img src="image/Anyconnect/Android/new/Android-2.jpg" alt=""></center><center style="color:purple"><strong>图4-2</strong></center>
+
+<ul>
+<li>说明：任意</li>
+<li>服务器地址<span style="color:red"><strong>*</strong></span>: 服务器域名或者URL</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-3.jpg" alt=""></center><center style="color:purple"><strong>图4-3</strong></center>
+
+<ul>
+<li>选择刚创建的VPN，并连接</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-4.jpg" alt=""></center><center style="color:purple"><strong>图4-4</strong></center>
+
+<center><img src="image/Anyconnect/Android/new/Android-5.jpg" alt=""></center><center style="color:purple"><strong>图4-5</strong></center>
+
+<ul>
+<li>证书不可靠警告，选择<strong>继续</strong>进行连接</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-6.jpg" alt=""></center><center style="color:purple"><strong>图4-6</strong></center>
+
+<ul>
+<li>账号<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用账户</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-7.jpg" alt=""></center><center style="color:purple"><strong>图4-7</strong></center>
+
+<ul>
+<li>密码<span style="color:red"><strong>*</strong></span>：登录Anyconnect所用密码</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-8.jpg" alt=""></center><center style="color:purple"><strong>图4-8</strong></center>
+
+<ul>
+<li>选择<strong>我信任此应用</strong></li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-9.jpg" alt=""></center><center style="color:purple"><strong>图4-9</strong></center>
+
+<ul>
+<li>连接VPN成功</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-10.jpg" alt=""></center><center style="color:purple"><strong>图4-10</strong></center>
+
+<ul>
+<li>如果出现<span style="color:red">不信任的服务器</span>警告，则修改设置，将<strong>阻止不信任的服务器</strong>的勾选去掉。</li>
+</ul>
+<center><img src="image/Anyconnect/Android/new/Android-11.jpg" alt=""></center><center style="color:purple"><strong>图4-11</strong></center>
+
+<center><img src="image/Anyconnect/Android/new/Android-12.jpg" alt=""></center><center style="color:purple"><strong>图4-12</strong></center>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/14/Anyconnect_VPN/" data-id="ciz5ap4c900006grb173dz897" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/02/14/IKEv2_VPN/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">先进实验室 IKEv2 VPN设置</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/02/14/Anyconnect_VPN/">先进实验室 Anyconnect VPN设置</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/14/IKEv2_VPN/">先进实验室 IKEv2 VPN设置</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
